@@ -4,8 +4,10 @@
   --clr-slate400: #94a3b8;
   --clr-slate600: #475569;
   --clr-slate800: #1e293b;
-  --clr-rose: #e11d48;
+  --clr-rose: #ff7f50;
   --clr-indigo: #4f46e5;
+  --clr-gradient1: rgba(9, 29, 43, 0.669);
+  --clr-gradient2: rgba(255, 255, 255, 0);
 
   /*rose rgb(225, 29, 72) */
   /* indigo 	rgb(79, 70, 229)*/
@@ -42,6 +44,8 @@ html {
   --clr-slate400: #1e293b;
   --clr-slate600: #1e293b;
   --clr-slate800: #1e293b;
+  --clr-gradient1: rgba(52, 217, 250, 0.669);
+  --clr-gradient2: rgba(255, 255, 255, 0);
 }
 
 body {
