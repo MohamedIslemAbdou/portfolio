@@ -2,17 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Portfolio</title>
   </head>
-  <body>
+  <body class="main-area">
+    <!-- start background animation -->
+
+    <div class="circles">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <!-- end background animation -->
     <header class="header">
       <nav>
         <ul class="header__menu">
@@ -105,8 +130,8 @@
     </div>
     <!-- End of mobile navigation -->
     <main>
-      <div class="firstView">
-        <section class="hero container hero__glass">
+      <div class="view">
+        <section class="hero container glass">
           <img class="hero__img" src="./hero.jpg" alt="Profile picture" />
           <h2 class="hero__subtitle">Hi, I'm Mohamed</h2>
           <h1 class="hero__title">
@@ -114,26 +139,18 @@
             Developer.
           </h1>
           <p class="hero__description">A passionate Frontend web Developer</p>
-          <a
-            class="hero__btn btn"
-            href="mailto:mohamedislemabdou@gmail.com"
-            target="_blank"
-            >Reach out</a
-          >
         </section>
-        <section id="about" class="about container section">
-          <div class="about__content about__glass">
-            <h2 class="about__title">About</h2>
+        <section id="about" class="about">
+          <div class="about__content glass container">
+            <h2 class="title">About</h2>
             <p class="about__description">
-              Hello there! I'm Mohamed, a
+              Hello there! I'm a
               <strong> Frontend web developer </strong> based near Ottawa. I
               used to be a network and distributed systems engineer, but I
               discovered that my passion for web development is even greater.
               So, when I arrived in Canada, I seized the opportunity to open a
               new chapter in my life filled with exciting challenges. I
-              absolutely love this new chapter!
-            </p>
-            <p class="about__description">
+              absolutely love this new chapter!<br />
               People who know me say i'm obsessed, that's fair, I am vert driven
               and love learning new things.
             </p>
@@ -142,103 +159,142 @@
             <h3 class="about__subtitle">Technologies</h3>
             <div class="about__ul-container">
               <ul class="about__ul">
-                <li class="about__list">HTML</li>
-                <li class="about__list">CSS</li>
-                <li class="about__list">JavaScript</li>
-                <li class="about__list">ReactJS</li>
+                <li class="about__list">
+                  <i class="fa-brands fa-html5" style="color: #e96107"></i>
+                  HTML
+                </li>
+                <li class="about__list">
+                  <i class="fa-brands fa-css3-alt" style="color: #0f62f3"></i>
+                  CSS
+                </li>
+                <li class="about__list">
+                  <i class="fa-brands fa-js" style="color: #d2e00e"></i>
+                  JavaScript
+                </li>
+              </ul>
+              <ul class="about__ul">
+                <li class="about__list">
+                  <i class="fa-brands fa-react" style="color: #82dbfb"></i>
+                  ReactJS
+                </li>
+                <li class="about__list">
+                  <i class="fa-brands fa-git" style="color: #ff7b00"></i>
+                  Git
+                </li>
               </ul>
             </div>
-            <div class="about__btn-wrapper">
-              <a class="about__btn btn" href="#featured">Projects </a>
-            </div>
           </div>
-          <div class="about__img-wrapper">
-            <img class="about__img" src="./about.jpg" salt="" />
+          <div class="about__content glass container">
+            <h2 class="title">Favorite quote</h2>
+            <q class="about__description-quote">
+              The best preparation for tomorrow is doing your best today.</q
+            >
+            <hr class="about__hr" />
+
+            <h2 id="contact" class="title">Get In Contact</h2>
+            <p class="contact__descriotion">
+              Wether you are starting a project, have a business inquiries, or
+              are student in need of assistance, my inbox is always open. Feel
+              free to reach out, and I will respond as soon as possible
+            </p>
+            <a
+              class="contact__btn btn"
+              href="mailto:mohamedislemabdou@gmail.com"
+              target="_blank"
+              >Reach out</a
+            >
           </div>
         </section>
-      </div>
-      <section id="featured" class="work container section">
-        <h2 class="work__title">Projects</h2>
-        <p class="work__description">
-          In this section, you will find the projects I have worked on to
-          practice and apply the skills I have learned.
-        </p>
-
-        <!-- Project 1 -->
-        <div class="work__container">
-          <h3 class="work__project-title">Netflix Clone</h3>
-          <div class="work__img-wrapper work__image1">
-            <img
-              class="lazy loading"
-              src="https://fakeimg.pl/986x985"
-              data-src="./NetflixClone.jpg"
-              alt="Netflix clone"
-            />
-          </div>
-          <div class="work__project work__content1">
-            <h3 class="work__project-subtitle">Netflix Clone</h3>
-            <p class="work__project-description-1">
-              The technologies used in this project are HTML, CSS, and
-              JavaScript.
-            </p>
-            <p class="work__project-description-2">
-              Creating a responsive clone of Netflix was an incredible learning
-              experience for me as a front-end web developer. It allowed me to
-              dive deep into the fundamentals of HTML, CSS, and JavaScript in a
-              practical and engaging way.
-            </p>
-            <a
-              class="btn work__project-btn"
-              href="https://netflix-clone-roan-theta.vercel.app/"
-            >
-              Website</a
-            >
-          </div>
-          <!-- Project 2 -->
-
-          <h3 class="work__project-title">Eshop</h3>
-          <div class="work__img-wrapper work__image2">
-            <img
-              class="lazy loading"
-              src="https://fakeimg.pl/1320*1329"
-              data-src="./eshop.jpg"
-              alt="eshop"
-            />
-          </div>
-          <div class="work__project work__content2">
-            <h3 class="work__project-subtitle">Eshop</h3>
-            <p class="work__project-description-1">
-              The technologies used in this project are HTML, CSS, JavaScript,
-              and React.
-            </p>
-            <p class="work__project-description-2">
-              Eshop is a modern website that incorporates amazing features
-              designed to optimize the user experience.
-            </p>
-            <a
-              class="btn work__project-btn"
-              href="https://eshop-wheat.vercel.app/"
-            >
-              Website</a
-            >
-          </div>
+        <div class="about__actionCall-wrapper">
+          <a id="secondViewbtn" class="about__actionCall" href="#secondViewbtn"
+            >Projects</a
+          >
         </div>
-      </section>
+      </div>
+      <div class="view">
+        <section id="featured" class="work glass container">
+          <h2 class="title">Projects</h2>
+          <p class="work__description">
+            In this section, you will find the projects I have worked on to
+            practice and apply the skills I have learned.
+          </p>
 
-      <section id="contact" class="contact container section">
-        <h2 class="contact__title">Get In Contact</h2>
+          <!-- Project 1 -->
+          <div class="work__container">
+            <h3 class="work__project-title">Netflix Clone</h3>
+            <div class="work__img-wrapper work__image1">
+              <img
+                class="lazy loading"
+                src="https://fakeimg.pl/986x985"
+                data-src="./NetflixClone.jpg"
+                alt="Netflix clone"
+              />
+            </div>
+            <div class="work__project work__content1">
+              <h3 class="work__project-subtitle">Netflix Clone</h3>
+              <p class="work__project-description-1">
+                The technologies used in this project are HTML, CSS, and
+                JavaScript.
+              </p>
+              <p class="work__project-description-2">
+                Creating a responsive clone of Netflix was an incredible
+                learning experience for me as a front-end web developer. It
+                allowed me to dive deep into the fundamentals of HTML, CSS, and
+                JavaScript in a practical and engaging way.
+              </p>
+              <a
+                class="btn work__project-btn"
+                href="https://netflix-clone-roan-theta.vercel.app/"
+              >
+                Website</a
+              >
+            </div>
+            <!-- Project 2 -->
+
+            <h3 class="work__project-title">Eshop</h3>
+            <div class="work__img-wrapper work__image2">
+              <img
+                class="lazy loading"
+                src="https://fakeimg.pl/1320*1329"
+                data-src="./eshop.jpg"
+                alt="eshop"
+              />
+            </div>
+            <div class="work__project work__content2">
+              <h3 class="work__project-subtitle">Eshop</h3>
+              <p class="work__project-description-1">
+                The technologies used in this project are HTML, CSS, JavaScript,
+                and React.
+              </p>
+              <p class="work__project-description-2">
+                Eshop is a modern website that incorporates amazing features
+                designed to optimize the user experience.
+              </p>
+              <a
+                class="btn work__project-btn"
+                href="https://eshop-wheat.vercel.app/"
+              >
+                Website</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="contact container section">
+          <!-- <h2 class="contact__title">Get In Contact</h2>
         <p class="contact__descriotion">
           Wether you are starting a project, have a business inquiries, or are
           student in need of assistance, my inbox is always open. Feel free to
           reach out, and I will respond as soon as possible
-        </p>
-        <a
-          href="mailto:mohamedislemabdou@gmail.com"
-          target="_blank"
-          class="contact__btn btn"
-          >Reach Out</a
-        >
-      </section>
+        </p> -->
+          <a
+            href="mailto:mohamedislemabdou@gmail.com"
+            target="_blank"
+            class="contact__btn btn"
+            >Reach Out</a
+          >
+        </section>
+      </div>
     </main>
     <footer class="footer container section">
       <h3 class="footer__title">~ Mohamed Islem Abdou~</h3>
