@@ -7,27 +7,36 @@
   gap: 1rem;
 }
 
-/* .contact__title {
-  font-size: var(--size-2xl);
-  color: var(--clr-light);
-  text-transform: capitalize;
-}
-.contact__descriotion {
-  font-size: var(--size-sm);
-  color: var(--clr-slate600);
-  max-width: 60ch;
-} */
-
 .contact__btn {
-  font-size: var(--size-sm);
+  font-size: var(--size-s);
   margin: 0 auto;
 }
 
 .contact__descriotion {
   max-width: 70ch;
-  font-size: var(--size-sm);
+  font-size: var(--size-s);
   color: var(--clr-slate600);
-  margin: auto;
+  margin: 1rem auto;
   line-height: 1.5em;
   padding: 0rem 1rem 0rem 1rem;
+}
+@media (min-width: 768px) {
+  .contact__btn {
+    font-size: var(--size-lg);
+  }
+
+  .contact__descriotion {
+    max-width: 80ch;
+    font-size: var(--size-xl);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact__description {
+    font-size: var(--size-2xl);
+  }
+
+  .contact__btn {
+    font-size: var(--size-xl);
+  }
 }

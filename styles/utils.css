@@ -74,3 +74,20 @@
   filter: blur(0) grayscale(0);
   transition: 1.3s ease-in-out;
 }
+
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: var(--size-4xl);
+  }
+}
+@media (min-width: 1280px) {
+  .title {
+    font-size: var(--size-5xl);
+  }
+}
