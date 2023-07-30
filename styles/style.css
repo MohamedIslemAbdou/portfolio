@@ -60,12 +60,13 @@ html {
 
 .light-mode {
   --clr-light: #020617;
-  --clr-dark: #f1f5f9;
+  --clr-dark: #f7f7f7;
   --clr-slate400: #1e293b;
   --clr-slate600: #1e293b;
   --clr-slate800: #1e293b;
-  --clr-gradient1: rgba(52, 217, 250, 0.669);
-  --clr-gradient2: rgba(255, 255, 255, 0);
+  --clr-gradient1: #63b7b7;
+  --clr-gradient2: #f7f7f7;
+  --clr-rose: #b7b763;
   --clr-circles: rgba(183, 21, 21, 0.083);
 }
 

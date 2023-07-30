@@ -27,7 +27,7 @@
 
   .contact__descriotion {
     max-width: 80ch;
-    font-size: var(--size-xl);
+    font-size: var(--size-lg);
   }
 }
 

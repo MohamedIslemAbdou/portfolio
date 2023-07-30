@@ -179,6 +179,7 @@
 
   .about__description {
     font-size: var(--size-lg);
+    padding: 0rem 1rem;
   }
 
   .about__subtitle {
@@ -195,9 +196,10 @@
 /*xl*/
 @media (min-width: 1280px) {
   .about__description {
-    max-width: 80ch;
+    max-width: 90ch;
     font-size: var(--size-xl);
     margin: auto;
+    padding: 0rem 1rem;
   }
 
   .about__subtitle {
