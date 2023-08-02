@@ -2,6 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <style>
+      body {
+        visibility: hidden;
+      }
+      body.content-visible {
+        visibility: visible;
+      }
+    </style>
+    <script>
+      load = function () {
+        document.body.classList.add("content-visible");
+      };
+      setTimeout(load, 500);
+    </script>
+    <script type="module" src="./src/main.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -11,7 +26,7 @@
 
     <title>Portfolio</title>
   </head>
-  <body class="main-area">
+  <body class="main-area transition">
     <!-- start background animation -->
 
     <div class="circles">
@@ -288,6 +303,5 @@
     <footer class="footer container section">
       <h3 class="footer__title">~ Mohamed Islem Abdou~</h3>
     </footer>
-    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
